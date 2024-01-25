@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="online-users"></ul>
+      <div class="chat-container">
+        <div class="messages-container"></div>
+        <form class="chat-form">
+          <div class="chat-inputs-container">
+            <input
+              name="name"
+              type="text"
+              placeholder="Nome"
+              class="chat-input"
+              required
+            />
+            <textarea
+              placeholder="Digite sua mensagem"
+              class="chat-input chat-input-message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <div class="chat-submit-container">
+            <button type="submit" class="chat-submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/chat.js"></script>
+  </body>
+</html>
